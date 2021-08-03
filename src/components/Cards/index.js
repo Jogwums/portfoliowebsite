@@ -37,6 +37,10 @@ const Cards = () => {
             <Card image={Img3} 
                    text={"Saving"} 
                    link={"https://budget-calculator-ce321d.netlify.app/"} />
+                   
+            <Card image={Img3} 
+                   text={"Food"} 
+                   link={"https://react-recipe-app-9a0239.netlify.app/"} />
         </>
     )
 }

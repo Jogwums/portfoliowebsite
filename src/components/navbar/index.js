@@ -17,7 +17,8 @@ const Navigation = () => {
     <Form inline>
       {/* <FormControl type="text" placeholder="Search" className="mr-sm-2" /> */}
       <Button variant="outline-dark">
-        <Nav.Link class="text-primary" href="https://www.linkedin.com/in/jonathan-ogwumike012016/">LinkedIn</Nav.Link>
+        <Nav.Link class="text-primary" target="_blank" ref="norefferer"
+                  href="https://www.linkedin.com/in/jonathan-ogwumike012016/">LinkedIn</Nav.Link>
       </Button>
     </Form>
   </Navbar>
