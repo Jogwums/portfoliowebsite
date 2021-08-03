@@ -19,7 +19,8 @@ const Cards = () => {
              <Card image={Img3} 
                    text={"Jokes"} 
                    link={"https://app.netlify.com/sites/react-jokes-app-86180c"} />
-             <Card image={Img} text={"Fun"} />
+
+             <Card image={Img} text={"Fun"} link={"/"} />
         </>
     )
 }
