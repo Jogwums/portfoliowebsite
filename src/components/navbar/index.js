@@ -12,12 +12,13 @@ const Navigation = () => {
         <Navbar.Brand href="#home">Jonnyt</Navbar.Brand>
     <Nav className="mr-auto">
       <Nav.Link href="/">Portfolio</Nav.Link>
-      <Nav.Link href="https://github.com/Jogwums">Contact</Nav.Link>
+      <Nav.Link rel="noreferrer" 
+                href="https://github.com/Jogwums">Contact</Nav.Link>
     </Nav>
     <Form inline>
       {/* <FormControl type="text" placeholder="Search" className="mr-sm-2" /> */}
       <Button variant="outline-dark">
-        <Nav.Link class="text-primary" target="_blank" ref="norefferer"
+        <Nav.Link class="text-primary" target="_blank" rel="noreferrer"
                   href="https://www.linkedin.com/in/jonathan-ogwumike012016/">LinkedIn</Nav.Link>
       </Button>
     </Form>
