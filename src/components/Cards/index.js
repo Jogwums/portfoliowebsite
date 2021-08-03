@@ -20,7 +20,9 @@ const Cards = () => {
                    text={"Jokes"} 
                    link={"https://app.netlify.com/sites/react-jokes-app-86180c"} />
 
-             <Card image={Img} text={"Fun"} link={"/"} />
+             <Card image={Img} 
+                   text={"Crypto"} 
+                   link={"https://app.netlify.com/sites/crypto-tracker-app-f80ecc"} />
         </>
     )
 }
