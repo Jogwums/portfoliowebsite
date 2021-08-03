@@ -9,15 +9,16 @@ const Navigation = () => {
     return (
     <>
     <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+        <Navbar.Brand href="#home">Jonnyt</Navbar.Brand>
     <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
+      <Nav.Link href="/">Portfolio</Nav.Link>
+      <Nav.Link href="https://github.com/Jogwums">Contact</Nav.Link>
     </Nav>
     <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-info">Search</Button>
+      {/* <FormControl type="text" placeholder="Search" className="mr-sm-2" /> */}
+      <Button variant="outline-dark">
+        <Nav.Link class="text-primary" href="https://www.linkedin.com/in/jonathan-ogwumike012016/">LinkedIn</Nav.Link>
+      </Button>
     </Form>
   </Navbar>
     </>

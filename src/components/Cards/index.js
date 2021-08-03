@@ -10,7 +10,7 @@ import Img3 from "../../assets/img/03.jpg"
 const Cards = () => {
     return (
         <>
-             <Card image={Img} />
+             <Card image={Img} text={"Ecommerce"} />
              <Card image={Img2} />
              <Card image={Img3} />
         </>

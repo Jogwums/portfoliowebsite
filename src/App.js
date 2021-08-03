@@ -1,4 +1,3 @@
-import './App.css';
 
 // components
 import Navigation from './components/navbar'
@@ -9,6 +8,7 @@ import HeaderDetails from './components/Header/'
 
 // styles
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 function App() {
   return (
