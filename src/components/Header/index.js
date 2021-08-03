@@ -11,8 +11,8 @@ const HeaderDetails = () => {
       <Header class="masthead text-center text-white">
             <div class="masthead-content">
                 <div class="container px-5">
-                    <h1 class="masthead-heading mb-0">My Personal Portfolio</h1>
-                    <h2 class="masthead-subheading mb-0">FrontEnd Systems Developer</h2>
+                    <h1 class="masthead-heading mb-0">Jonathan's Portfolio</h1>
+                    <h3 class="masthead-subheading mb-0">Front-End Systems Developer</h3>
                     <a class="btn btn-warning btn-xl rounded-pill mt-5" href="#scroll">Learn More</a>
                 </div>
             </div>
