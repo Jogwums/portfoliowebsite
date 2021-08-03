@@ -19,7 +19,7 @@ const Card = ({image, text, link}) => {
                     </Col>
                     <Col className="col-lg-6 order-lg-1">
                         <div className="p-5">
-                            <h2 className="hero">For those who love {text}</h2>
+                            <h2 className="display-4">For those who love {text}</h2>
                             <p>Click the image to view more, you'll be redirected to the project website.</p>
                         </div>
                     </Col>
