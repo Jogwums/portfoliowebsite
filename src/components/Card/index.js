@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Card = ({image, text}) => {
+const Card = ({image, text, link}) => {
     return (
     <>
     <section id="scroll">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
-                        <a href="https://joe-e-commerce-project-1462e2.netlify.app/" target="_blank">
+                        <a href={link} target="_blank">
                         <div class="p-5"><img class="img-fluid rounded-circle" src={image} alt="..." /></div>
                         </a>
                     </div>
