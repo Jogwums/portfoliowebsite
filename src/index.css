@@ -9,7 +9,7 @@ body {
   background: linear-gradient(90deg,#5544ff30,#5b58f83d);
 }
 .jumbotron {
-  background-color: #fdfdfd;
+  background-color: #fdfdfd !important;
 }
 img.img-fluid.rounded-circle:hover {
   opacity: 0.95;
