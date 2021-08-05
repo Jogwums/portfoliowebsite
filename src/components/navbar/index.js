@@ -12,7 +12,7 @@ const Navigation = () => {
         <Navbar.Brand href="#home">Jonnyt</Navbar.Brand>
     <Nav className="mr-auto">
       <Nav.Link href="/">Portfolio</Nav.Link>
-      <Nav.Link rel="noreferrer" 
+      <Nav.Link rel="noreferrer" target="_blank"
                 href="https://github.com/Jogwums">Contact</Nav.Link>
     </Nav>
     <Form inline>

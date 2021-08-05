@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background: linear-gradient(to right, #54f, #84f); */
-  background: linear-gradient(90deg,#5544ff30,#5b58f83d);
+  /* background: linear-gradient(90deg, #54f, #84f); */
+  background: linear-gradient(to bottom,#5544ff30,#5b58f83d);
 }
 .jumbotron {
   background-color: #fdfdfd !important;
