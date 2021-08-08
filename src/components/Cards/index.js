@@ -18,13 +18,14 @@ const Cards = () => {
         <>
             <Container>
                 <Row>
-                    <Col lg={12}>
+                    <Col md={12}>
                      <Card image={EcomImg} 
                             text={"Ecommerce"} 
                             link={"https://joe-e-commerce-project-1462e2.netlify.app/"} />
                     </Col>
                     <Col>
-                      <Card image={DataImg} text={"Data"} link={"#data"} />
+                      <Card image={DataImg} text={"Data"} 
+                          link={"https://www.kaggle.com/jogwums"} />
                     </Col>
                 </Row>
                 <Row >
