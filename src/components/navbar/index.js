@@ -1,27 +1,30 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-// import FormControl from 'react-bootstrap/FormControl';
+
+
+import ContactModal from '../Modal/ContactModal'
 
 const Navigation = () => {
     return (
     <>
     <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="#home">Jonnyt</Navbar.Brand>
+        <Navbar.Brand href="/">Jonnyt</Navbar.Brand>
     <Nav className="mr-auto">
-      <Nav.Link href="/">Portfolio</Nav.Link>
-      <Nav.Link rel="noreferrer" target="_blank"
-                href="https://github.com/Jogwums">Contact</Nav.Link>
+      {/* <Nav.Link href="/">Portfolio</Nav.Link> */}
+      <Nav.Link href="#"><ContactModal/></Nav.Link>
     </Nav>
-    <Form inline>
-      {/* <FormControl type="text" placeholder="Search" className="mr-sm-2" /> */}
-      <Button variant="outline-dark">
-        <Nav.Link class="text-primary" target="_blank" rel="noreferrer"
-                  href="https://www.linkedin.com/in/jonathan-ogwumike012016/">LinkedIn</Nav.Link>
-      </Button>
-    </Form>
+    <Nav className="ml-auto">
+      <Nav.Link rel="noreferrer" target="_blank"
+                href="https://github.com/Jogwums">
+                 Github
+                </Nav.Link>
+  
+        <Nav.Link className="text-primary" target="_blank" rel="noreferrer"
+                  href="https://www.linkedin.com/in/jonathan-ogwumike012016/">
+                    LinkedIn
+                  </Nav.Link>
+      </Nav>
   </Navbar>
     </>
   )

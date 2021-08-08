@@ -1,13 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 
+import Form from './Form'
+
+// import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
-import ModalBody from 'react-bootstrap/ModalBody'
-import ModalFooter from 'react-bootstrap/ModalFooter'
+import Nav from 'react-bootstrap/Nav';
+// import ModalDialog from 'react-bootstrap/ModalDialog'
+// import ModalHeader from 'react-bootstrap/ModalHeader'
+// import ModalBody from 'react-bootstrap/ModalBody'
+// import ModalFooter from 'react-bootstrap/ModalFooter'
 
 const ContactModal = () => {
+
+    const [lgShow, setLgShow] = useState(false);
+
+
     return (
-        <>
-            
+        <>  
+            <Nav.Link variant="dark" onClick={() => setLgShow(true)}>
+                Contact
+            </Nav.Link> 
+        <Modal
+            size="lg"
+            show={lgShow}
+            onHide={() => setLgShow(false)}
+            aria-labelledby="Contact Form"
+        >
+            <Modal.Header closeButton>
+            <Modal.Title id="example-modal-sizes-title-lg">
+                Contact Form
+            </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                <Form />
+            </Modal.Body>
+      </Modal>
+        
+
         </>
     )
 }
