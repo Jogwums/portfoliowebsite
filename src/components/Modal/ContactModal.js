@@ -10,7 +10,7 @@ import Nav from 'react-bootstrap/Nav';
 // import ModalBody from 'react-bootstrap/ModalBody'
 // import ModalFooter from 'react-bootstrap/ModalFooter'
 
-const ContactModal = () => {
+const ContactModal = ({text}) => {
 
     const [lgShow, setLgShow] = useState(false);
 
@@ -18,7 +18,7 @@ const ContactModal = () => {
     return (
         <>  
             <Nav.Link variant="dark" onClick={() => setLgShow(true)}>
-                Contact
+                {text}
             </Nav.Link> 
         <Modal
             size="lg"

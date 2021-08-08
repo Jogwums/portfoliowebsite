@@ -12,7 +12,8 @@ const Navigation = () => {
         <Navbar.Brand href="/">Jonnyt</Navbar.Brand>
     <Nav className="mr-auto">
       {/* <Nav.Link href="/">Portfolio</Nav.Link> */}
-      <Nav.Link href="#"><ContactModal/></Nav.Link>
+      <Nav.Link href="#scroll" disabled ><ContactModal text={"Portfolio"} /></Nav.Link>
+      <Nav.Link href="#"><ContactModal text={"Contact"}/></Nav.Link>
     </Nav>
     <Nav className="ml-auto">
       <Nav.Link rel="noreferrer" target="_blank"
