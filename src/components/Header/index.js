@@ -10,7 +10,7 @@ const HeaderDetails = () => {
     return (
     <Jumbotron className="p-5">
       <Header className="masthead text-black">
-            <div className="masthead-content ml-5 pl-5">
+            <div className="masthead-content md-ml-5 md-pl-5">
                 <Container className="px-5">
                     <h1 className="masthead-heading mb-0">Jonathan Ogwumike</h1>
                     <br />
