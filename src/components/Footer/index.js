@@ -5,9 +5,9 @@ import Navbar from 'react-bootstrap/Navbar';
 const FooterDetails = () => {
     return (
     <>
-      <Navbar class="py-5 bg-black">
-            <div class="container px-5 bg-black">
-              <p class="m-0 text-center small">Copyright &copy; Jonathan Ogwumike 2021</p>
+      <Navbar className="py-5 bg-black">
+            <div className="container px-5 bg-black">
+              <p className="m-0 text-center small">Copyright &copy; Jonathan Ogwumike 2021</p>
             </div>
         </Navbar>
     </>
