@@ -1,13 +1,20 @@
 import React from "react";
+import { useState } from 'react';
+//components
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-// import InputGroup from 'react-bootstrap/InputGroup';
-
+//formik
 import { Formik } from 'formik'
 import * as yup from 'yup';
 
-// const { Formik } = formik;
+//emailjs
+import { send, init } from 'emailjs-com';
+init("user_7qrhMO4byVwMRWpIvHg4x");
+
+
+
+
 
 const schema = yup.object().shape({
   Name: yup.string().required(),
@@ -18,10 +25,38 @@ const schema = yup.object().shape({
 });
 
 function FormExample() {
+
+  const [toSend, setToSend] = useState({
+    from_name: '',
+    to_name: '',
+    message: '',
+    reply_to: '',
+  });
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    send(
+        'service_y6b2zbb',
+        'template_vhowkmn',
+        toSend,
+        'user_7qrhMO4byVwMRWpIvHg4x'
+      )
+        .then((response) => {
+          console.log('SUCCESS!', response.status, response.text);
+        })
+        .catch((err) => {
+          console.log('FAILED...', err);
+        });
+  };
+
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
+
   return (
     <Formik
       validationSchema={schema}
-      onSubmit={console.log}
+      onSubmit={onSubmit}
       initialValues={{
         Name: 'Mark',
         email: 'mark@example.com',
@@ -31,7 +66,6 @@ function FormExample() {
     >
       {({
         handleSubmit,
-        handleChange,
         handleBlur,
         values,
         touched,
@@ -45,18 +79,20 @@ function FormExample() {
               <Form.Control
                 type="text"
                 name="Name"
-                value={values.Name}
+                value={toSend.from_name}
                 onChange={handleChange}
                 isValid={touched.Name && !errors.Name}
               />
               <Form.Control.Feedback tooltip>Looks good!</Form.Control.Feedback>
             </Form.Group>
-            <Form.Group as={Col} md="6" controlId="validationFormik102">
+            <Form.Group 
+              
+              as={Col} md="6" controlId="validationFormik102">
               <Form.Label>Email Address</Form.Label>
               <Form.Control
                 type="text"
                 name="email"
-                value={values.email}
+                value={toSend.reply_to}
                 onChange={handleChange}
                 isValid={touched.email && !errors.email}
               />
@@ -84,7 +120,9 @@ function FormExample() {
             
             
           </Form.Row>
-          <Form.Group controlId="exampleForm.ControlTextarea1">
+          <Form.Group 
+            onChange={handleChange}
+            controlId="exampleForm.ControlTextarea1">
             <Form.Label>Message</Form.Label>
             <Form.Control as="textarea" rows={5} />
          </Form.Group>
@@ -106,7 +144,5 @@ function FormExample() {
     </Formik>
   );
 }
-
-// render(<FormExample />);
 
 export default FormExample;

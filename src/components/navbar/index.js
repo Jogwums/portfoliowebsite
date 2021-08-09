@@ -4,6 +4,9 @@ import Nav from 'react-bootstrap/Nav';
 
 
 import ContactModal from '../Modal/ContactModal'
+// import ContactForm from '../Modal/ContactForm'
+//form trial
+// import Emailjs from './Modal/Emailjs'
 
 const Navigation = () => {
     return (
