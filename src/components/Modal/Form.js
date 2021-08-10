@@ -27,10 +27,11 @@ const schema = yup.object().shape({
 function FormExample() {
 
   const [toSend, setToSend] = useState({
-    from_name: '',
-    to_name: '',
-    message: '',
-    reply_to: '',
+    from_name: 'Visitor',
+    to_name: 'Jonathan',
+    message: 'Hello World',
+    subject:'',
+    reply_to: 'Jamie',
   });
 
   const onSubmit = (e) => {
@@ -57,30 +58,26 @@ function FormExample() {
     <Formik
       validationSchema={schema}
       onSubmit={onSubmit}
-      initialValues={{
-        Name: 'Mark',
-        email: 'mark@example.com',
-        subject: '',
-        terms: false,
-      }}
+      initialValues={{...toSend}}
     >
       {({
-        handleSubmit,
+        handleSubmits,
+        handleChanges,
         handleBlur,
         values,
         touched,
         isValid,
         errors,
       }) => (
-        <Form noValidate onSubmit={handleSubmit}>
+        <Form noValidate onSubmit={onSubmit}>
           <Form.Row>
             <Form.Group as={Col} md="6" controlId="validationFormik101">
               <Form.Label>First name</Form.Label>
               <Form.Control
                 type="text"
                 name="Name"
-                value={toSend.from_name}
                 onChange={handleChange}
+                value={setToSend.from_name}
                 isValid={touched.Name && !errors.Name}
               />
               <Form.Control.Feedback tooltip>Looks good!</Form.Control.Feedback>
@@ -92,8 +89,8 @@ function FormExample() {
               <Form.Control
                 type="text"
                 name="email"
-                value={toSend.reply_to}
                 onChange={handleChange}
+                value={setToSend.to_name}
                 isValid={touched.email && !errors.email}
               />
 
@@ -102,43 +99,36 @@ function FormExample() {
             
           </Form.Row>
           <Form.Row>
-            <Form.Group as={Col} md="12" controlId="validationFormik103">
+            <Form.Group 
+                onChange={handleChange} 
+                as={Col} 
+                md="12" 
+                controlId="validationFormik103">
               <Form.Label>Subject</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Subject"
                 name="subject"
-                value={values.subject}
-                onChange={handleChange}
                 isInvalid={!!errors.subject}
+                value={setToSend.subject}
               />
 
               <Form.Control.Feedback type="invalid" tooltip>
                 {errors.subject}
               </Form.Control.Feedback>
             </Form.Group>
-            
-            
           </Form.Row>
           <Form.Group 
-            onChange={handleChange}
             controlId="exampleForm.ControlTextarea1">
             <Form.Label>Message</Form.Label>
-            <Form.Control as="textarea" rows={5} />
-         </Form.Group>
-          {/* <Form.Group>
-            <Form.Check
-              required
-              name="terms"
-              label="Agree to terms and conditions"
+            <Form.Control  
               onChange={handleChange}
-              isInvalid={!!errors.terms}
-              feedback={errors.terms}
-              id="validationFormik106"
-              feedbackTooltip
-            />
-          </Form.Group> */}
-          <Button type="submit">Submit form</Button>
+              value={setToSend.message} 
+              as="textarea" rows={5} />
+         </Form.Group>
+          <Button
+            onClick={onSubmit} 
+            type="submit">Submit form</Button>
         </Form>
       )}
     </Formik>
