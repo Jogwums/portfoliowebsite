@@ -29,21 +29,21 @@ const ContactForm = () => {
 	}),
 	onSubmit: (values) => {
 	   try{
-		emailjs.send(process.env.REACT_APP_FORMIK_SERVICE_ID , 
-            process.env.REACT_APP_FORMIK_TEMPLATE_ID, 
-            values, 
-            process.env.REACT_APP_FORMIK_USER_ID)
-		  .then(() => {
-		     sentMessage.classList.add('success');
-		     sentMessage.innerHTML = CONTACT_ERROR.success;
+        emailjs.send(process.env.REACT_APP_FORMIK_SERVICE_ID, 
+                process.env.REACT_APP_FORMIK_TEMPLATE_ID, 
+                values, 
+                process.env.REACT_APP_FORMIK_USER_ID)
+          .then(() => {
+            //  sentMessage.classList.add('success');
+		    //  sentMessage.innerHTML = CONTACT_ERROR.success;
 		     setButtonState('Send Email');
 		     setSubmitting(false);
 		     resetForm();
 	          });
 	   }
 	   catch {
-	      sentMessage.classList.add('error');
-	      sentMessage.innerHTML = CONTACT_ERROR.error;
+	      // sentMessage.classList.add('error');
+	      // sentMessage.innerHTML = CONTACT_ERROR.error;
 	      setButtonState('Send Email');
 	      setSubmitting(false);
 	  }

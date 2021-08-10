@@ -10,7 +10,7 @@ import * as yup from 'yup';
 
 //emailjs
 import { send, init } from 'emailjs-com';
-init("user_7qrhMO4byVwMRWpIvHg4x");
+init(process.env.REACT_APP_FORMIK_USER_ID);
 
 
 
@@ -37,10 +37,10 @@ function FormExample() {
   const onSubmit = (e) => {
     e.preventDefault();
     send(
-        'service_y6b2zbb',
-        'template_vhowkmn',
+      process.env.REACT_APP_FORMIK_SERVICE_ID,
+      process.env.REACT_APP_FORMIK_TEMPLATE_ID,
         toSend,
-        'user_7qrhMO4byVwMRWpIvHg4x'
+        process.env.REACT_APP_FORMIK_USER_ID
       )
         .then((response) => {
           console.log('SUCCESS!', response.status, response.text);
