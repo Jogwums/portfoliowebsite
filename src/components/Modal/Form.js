@@ -30,16 +30,16 @@ function FormExample() {
     from_name: 'Visitor',
     to_name: 'Jonathan',
     message: 'Hello World',
-    subject:'',
+    subject:'New Email',
     reply_to: 'Jamie',
   });
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     send(
       process.env.REACT_APP_FORMIK_SERVICE_ID,
       process.env.REACT_APP_FORMIK_TEMPLATE_ID,
-        toSend,
+        await toSend,
         process.env.REACT_APP_FORMIK_USER_ID
       )
         .then((response) => {
@@ -48,6 +48,7 @@ function FormExample() {
         .catch((err) => {
           console.log('FAILED...', err);
         });
+        // console.log({...toSend})
   };
 
   const handleChange = (e) => {
@@ -71,26 +72,27 @@ function FormExample() {
       }) => (
         <Form noValidate onSubmit={onSubmit}>
           <Form.Row>
-            <Form.Group as={Col} md="6" controlId="validationFormik101">
+            <Form.Group
+              onChange={handleChange}
+              as={Col} md="6" controlId="validationFormik101">
               <Form.Label>First name</Form.Label>
               <Form.Control
                 type="text"
                 name="Name"
-                onChange={handleChange}
-                value={setToSend.from_name}
+                
+                value={setToSend.Name}
                 isValid={touched.Name && !errors.Name}
               />
               <Form.Control.Feedback tooltip>Looks good!</Form.Control.Feedback>
             </Form.Group>
             <Form.Group 
-              
+              onChange={handleChange}
               as={Col} md="6" controlId="validationFormik102">
               <Form.Label>Email Address</Form.Label>
               <Form.Control
                 type="text"
                 name="email"
-                onChange={handleChange}
-                value={setToSend.to_name}
+                value={setToSend.email}
                 isValid={touched.email && !errors.email}
               />
 
@@ -119,12 +121,12 @@ function FormExample() {
             </Form.Group>
           </Form.Row>
           <Form.Group 
+            onChange={handleChange}
             controlId="exampleForm.ControlTextarea1">
             <Form.Label>Message</Form.Label>
             <Form.Control  
-              onChange={handleChange}
               value={setToSend.message} 
-              as="textarea" rows={5} />
+              as="textarea" rows={5} name="message" type="textarea" />
          </Form.Group>
           <Button
             onClick={onSubmit} 
