@@ -17,9 +17,11 @@ const ContactModal = ({text}) => {
 
     return (
         <>  
+            <div>
             <Nav.Link variant="dark" onClick={() => setLgShow(true)}>
                 {text}
             </Nav.Link> 
+            </div>
         <Modal
             size="lg"
             show={lgShow}
