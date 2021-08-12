@@ -19,3 +19,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.form-control{
+  display: flex !important;
+  flex-direction: column !important;
+  margin: 2rem 0;
+
+}

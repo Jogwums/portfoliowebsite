@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 //formik
-import { Formik, useFormik } from 'formik'
+import { Formik } from 'formik'
 import * as yup from 'yup';
 
 //emailjs
@@ -135,9 +135,11 @@ function FormExample() {
               value={setToSend.message} 
               as="textarea" rows={5} name="message" type="textarea" />
          </Form.Group>
+         <Button className="mr-3" type="reset">Reset</Button>
           <Button
             onClick={onSubmit} 
-            type="submit">Submit form</Button>
+            type="submit">Submit form
+          </Button>
         </Form>
       )}
     </Formik>

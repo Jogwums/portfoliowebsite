@@ -7,7 +7,7 @@ import HeaderDetails from './components/Header/'
 
 //test form
 
-// import Form from './components/Modal/FormFormik'
+import Form from './components/Modal/FormFormik'
 
 // styles
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,7 +18,7 @@ function App() {
   return (
     <div>
       <Navigation />
-      {/* <Form /> */}
+      <Form />
       <HeaderDetails />
       <Cards />
       <FooterDetails />
