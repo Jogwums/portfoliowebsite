@@ -1,3 +1,5 @@
+import React from 'react';
+// import {}
 
 // components
 import Navigation from './components/navbar'
@@ -7,7 +9,7 @@ import HeaderDetails from './components/Header/'
 
 //test form
 
-// import Form from './components/Modal/FormFormik'
+// import FormComponent from './components/Signup Form'
 
 // styles
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,7 +20,7 @@ function App() {
   return (
     <div>
       <Navigation />
-      {/* <Form /> */}
+      {/* <FormComponent /> */}
       <HeaderDetails />
       <Cards />
       <FooterDetails />
