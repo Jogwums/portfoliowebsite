@@ -46,10 +46,10 @@ const Signup = () => {
                         <TextField name="subject" type="text" placeholder="Subject" />
                         <TextArea name="message" type="text" placeholder="Message" />
                         <button className="btn btn-dark mt-3" type="submit">
-                            Register
+                            Send <span><i class="far fa-paper-plane"></i></span>
                         </button>
                         <button className="btn btn-danger mt-3 ml-3" type="reset">
-                            Reset
+                            Reset <span><i class="fas fa-recycle"></i></span>
                         </button>
                     </Form>
                 </>
