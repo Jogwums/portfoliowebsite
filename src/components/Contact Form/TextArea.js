@@ -1,17 +1,17 @@
 import React from 'react'
 import { ErrorMessage, useField } from 'formik'
 
-const TextField = ({ label, ...props}) => {
+const TextArea = ({ label, ...props}) => {
     const [field, meta] = useField(props);
   
     return (
         <>
-        <div className="mb-1">
+        <div>
             <label htmlFor={field.name}>{label}</label>
-            <input 
+            <textarea  
                 className={`form-control shadow-none ${meta.touched && meta.error && 'is-invalid'}`}
                 {...field} {...props}
-                autoComplete="off"
+                autoComplete="off" rows={5}
                 />
                 <ErrorMessage component="div" className="error" name={field.name} />
         </div>
@@ -19,4 +19,4 @@ const TextField = ({ label, ...props}) => {
     )
 }
 
-export default TextField
+export default TextArea
