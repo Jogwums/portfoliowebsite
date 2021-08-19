@@ -4,22 +4,20 @@ import Nav from 'react-bootstrap/Nav';
 
 
 import ContactModal from '../Modal/ContactModal'
-// import ContactForm from '../Modal/ContactForm'
-//form trial
-// import Emailjs from './Modal/Emailjs'
+
 
 const Navigation = () => {
     return (
     <>
     <Navbar bg="dark" variant="dark" expand="md">
-        <Navbar.Brand href="/">Jonnyt</Navbar.Brand>
+        <Navbar.Brand href="/" rel="noreferrer" >Jonnyt</Navbar.Brand>
         <Navbar.Toggle aria-controls="main"/>
         <Navbar.Collapse id="main">
 
           <Nav className="mr-auto">
             {/* <Nav.Link href="/">Portfolio</Nav.Link> */}
-            <Nav.Link href="#scroll" disabled ><ContactModal text={"Portfolio"} /></Nav.Link>
-            <Nav.Link href="#"><ContactModal text={"Contact"}/></Nav.Link>
+            <Nav.Link rel="noreferrer" href="#scroll" disabled ><ContactModal text={"Portfolio"} /></Nav.Link>
+            <Nav.Link rel="noreferrer" href="#"><ContactModal text={"Contact"}/></Nav.Link>
           </Nav>
          <Nav className="ml-auto">
           <Nav.Link rel="noreferrer" target="_blank"

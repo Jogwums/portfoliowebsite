@@ -2,22 +2,21 @@ import React, { useState } from 'react'
 
 import Form from '../Contact Form/index'
 
-// import Button from 'react-bootstrap/Button'
+// import Form from './FormFormik'
+
 import Modal from 'react-bootstrap/Modal'
-import Nav from 'react-bootstrap/Nav';
+import NavLink from 'react-bootstrap/Nav';
 
 
 const ContactModal = ({text}) => {
 
     const [lgShow, setLgShow] = useState(false);
-
-
     return (
         <>  
             <div>
-            <Nav.Link variant="dark" onClick={() => setLgShow(true)}>
+            <NavLink variant="dark" onClick={() => setLgShow(true)}>
                 {text}
-            </Nav.Link> 
+            </NavLink> 
             </div>
         <Modal
             size="lg"
@@ -34,8 +33,6 @@ const ContactModal = ({text}) => {
                 <Form />
             </Modal.Body>
       </Modal>
-        
-
         </>
     )
 }

@@ -6,7 +6,6 @@ const TextField = ({ label, ...props}) => {
   
     return (
         <>
-        <div>
             <label htmlFor={field.name}>{label}</label>
             <input 
                 className={`form-control shadow-none ${meta.touched && meta.error && 'is-invalid'}`}
@@ -14,7 +13,6 @@ const TextField = ({ label, ...props}) => {
                 autoComplete="off"
                 />
                 <ErrorMessage component="div" className="error" name={field.name} />
-        </div>
         </>
     )
 }

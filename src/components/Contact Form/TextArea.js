@@ -6,7 +6,6 @@ const TextArea = ({ label, ...props}) => {
   
     return (
         <>
-        <div>
             <label htmlFor={field.name}>{label}</label>
             <textarea  
                 className={`form-control shadow-none ${meta.touched && meta.error && 'is-invalid'}`}
@@ -14,7 +13,6 @@ const TextArea = ({ label, ...props}) => {
                 autoComplete="off" rows={5}
                 />
                 <ErrorMessage component="div" className="error" name={field.name} />
-        </div>
         </>
     )
 }

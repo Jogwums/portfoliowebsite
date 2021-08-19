@@ -6,6 +6,8 @@ import TextField from './TextField'
 import TextArea from './TextArea'
 
 const Signup = () => {
+
+    const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
     const validate = Yup.object({
         name: Yup.string().required("Name is Required"),
         email: Yup.string()
@@ -16,6 +18,12 @@ const Signup = () => {
         message: Yup.string()
                 .required("Please leave a Message"),
     })
+
+    const handleClick = () => {
+        console.log("Clicked");
+        console.log();
+    }
+
     return (
         <Formik
         initialValues={{
@@ -25,14 +33,12 @@ const Signup = () => {
             meassage:''
         }}
         validationSchema={validate}
-        onSubmit={ values => {
-            console.log('====================================');
-            console.log(values);
-            console.log('====================================');
+        onSubmit={ async (values) => {
+            await sleep(500);
+            window.alert(JSON.stringify(values));
         }}
         >
-            {formik => (
-                <>
+            {({isSubmitting}) => (
                     <Form>
                         <div className="row">
                         <div className="col-md-6">
@@ -45,14 +51,17 @@ const Signup = () => {
                         </div>
                         <TextField name="subject" type="text" placeholder="Subject" />
                         <TextArea name="message" type="text" placeholder="Message" />
-                        <button className="btn btn-dark mt-3" type="submit">
-                            Send <span><i class="far fa-paper-plane"></i></span>
+                        <button 
+                            className="btn btn-dark mt-3" 
+                            type="submit"
+                            onClick={handleClick}
+                            >
+                            Send <span><i className="far fa-paper-plane"></i></span>
                         </button>
                         <button className="btn btn-danger mt-3 ml-3" type="reset">
-                            Reset <span><i class="fas fa-recycle"></i></span>
+                            Reset <span><i className="fas fa-recycle"></i></span>
                         </button>
                     </Form>
-                </>
             )}
         </Formik>
     )  
