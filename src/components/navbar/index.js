@@ -7,6 +7,8 @@ import ContactModal from '../Modal/ContactModal'
 
 
 const Navigation = () => {
+  const [darkmode, setDarkmode] = React.useState(false)
+
     return (
     <>
     <Navbar bg="dark" variant="dark" expand="md">
@@ -30,6 +32,11 @@ const Navigation = () => {
                         LinkedIn
                       </Nav.Link>
           </Nav>
+          {/* <Nav>
+            <div>
+              <input className={darkmode} type="checkbox" name="darkmode" />
+            </div>
+          </Nav> */}
       </Navbar.Collapse>
   </Navbar>
     </>

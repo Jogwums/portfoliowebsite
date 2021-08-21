@@ -35,12 +35,12 @@ const Signup = () => {
         validationSchema={validate}
         onSubmit={ async (values) => {
             await sleep(500);
-            window.alert(JSON.stringify(values));
+            window.alert(JSON.stringify(values, null, 2));
         }}
         >
             {({isSubmitting}) => (
-                    <Form>
-                        <div className="row">
+                    <Form className="form">
+                        <div className="form-row">
                         <div className="col-md-6">
                           <TextField name="name" type="text" placeholder="Name" />
                         </div>

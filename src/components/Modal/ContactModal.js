@@ -19,7 +19,7 @@ const ContactModal = ({text}) => {
             </NavLink> 
             </div>
         <Modal
-            size="lg"
+            size="md"
             show={lgShow}
             onHide={() => setLgShow(false)}
             aria-labelledby="Contact Form"

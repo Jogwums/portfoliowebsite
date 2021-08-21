@@ -5,13 +5,10 @@ import './index.css'
 
 const FormComponent = () => {
     return (
-        <div className="container">
-            <div className="row">
-                <div className="col">
-                    <Signup />
-                </div>
-            </div>
-        </div>
+          <div className="form-fluid">
+              <Signup />
+          </div>
+
     )
 }
 
