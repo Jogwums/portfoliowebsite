@@ -7,7 +7,7 @@ import ContactModal from '../Modal/ContactModal'
 
 
 const Navigation = () => {
-  const [darkmode, setDarkmode] = React.useState(false)
+  // const [darkmode, setDarkmode] = React.useState(false)
 
     return (
     <>

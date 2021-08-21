@@ -19,17 +19,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.form-control{
-  display: flex !important;
-  flex-direction: column !important;
-  margin: 2rem 0;
-}
-
-.form-control[label], label , textarea{
-  margin: 2rem;
-  padding: 1rem;
-
-}
 
 .darkmode{
   background: black !important;
