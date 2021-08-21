@@ -40,22 +40,15 @@ const ContactUS = () => {
             .catch((err) => {
               console.log('FAILED...', err);
             })
-            // .then((
-            //     console.log({...toSend})
-            // ))
+           
       };
 
     const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     }
-    const resetForm = (e) => {
-        setToSend({
-            Name: 'Name',
-            email: 'Email',
-            message: 'Hello World',
-            subject:'Subject',
-        })
-    }
+    // const resetForm = (e) => {
+    //   window.alert("click close button")
+    // }
 
     return (
         <Formik
@@ -87,11 +80,12 @@ const ContactUS = () => {
                             Send <span><i className="far fa-paper-plane"></i></span>
                             
                         </button>
-                        <button onClick={resetForm} className="btn btn-danger mt-3 ml-3" type="reset"
+                        {/* <button onClick={resetForm} className="btn btn-danger mt-3 ml-3" type="reset"
                             >
                             Reset <span><i className="fas fa-recycle"></i></span>
-                        </button>
+                        </button> */}
                     </Form>
+                    
             )}
         </Formik>
     )  
