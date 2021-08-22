@@ -72,7 +72,7 @@ const ContactUS = () => {
                         <TextField onChange={handleChange} value={setToSend.subject} name="subject" type="text" placeholder="Subject" />
                         <TextArea onChange={handleChange} value={setToSend.message} name="message" type="text" placeholder="Message" />
                         <button 
-                            className="btn btn-dark mt-3" 
+                            className="btn btn-dark mt-3 float-right" 
                             type="submit"
                             // disabled={isSubmitting}
                             onClick={onSubmit}

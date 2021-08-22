@@ -1,11 +1,11 @@
 import React from 'react';
-// import {}
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+ 
 
-// components
-import Navigation from './components/navbar'
-import Cards from './components/Cards'
-import FooterDetails from './components/Footer'
-import HeaderDetails from './components/Header/'
+//pages
+import Home from './pages/Home';
+import DataPage from './pages/DataPortfolio'
+import ErrorPage from './pages/ErrorPage'
 
 //test form
 
@@ -18,13 +18,19 @@ import './App.css';
 
 function App() {
   return (
-    <div>
-      <Navigation />
-      {/* <FormComponent /> */}
-      <HeaderDetails />
-      <Cards />
-      <FooterDetails />
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/data">
+          <DataPage />
+        </Route>
+        <Route path="*">
+          <ErrorPage />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

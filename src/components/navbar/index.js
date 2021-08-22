@@ -18,15 +18,15 @@ const Navigation = () => {
 
           <Nav className="mr-auto">
             {/* <Nav.Link href="/">Portfolio</Nav.Link> */}
-            <Nav.Link rel="noreferrer" href="#scroll" disabled ><ContactModal text={"Portfolio"} /></Nav.Link>
-            <Nav.Link rel="noreferrer" href="#"><ContactModal text={"Contact"}/></Nav.Link>
-          </Nav>
-         <Nav className="ml-auto">
-          <Nav.Link rel="noreferrer" target="_blank"
+            <Nav.Link rel="noreferrer" href="/data" ><ContactModal text={"Portfolio"} /></Nav.Link>
+            <Nav.Link rel="noreferrer" target="_blank"
                     href="https://github.com/Jogwums">
                     Github
                     </Nav.Link>
-      
+          </Nav>
+         <Nav className="ml-auto">
+          
+            <Nav.Link rel="noreferrer" href="#"><ContactModal text={"Contact"}/></Nav.Link>
             <Nav.Link className="text-primary" target="_blank" rel="noreferrer"
                       href="https://www.linkedin.com/in/jonathan-ogwumike012016/">
                         LinkedIn
