@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
-import Jtlogo from '../../assets/JT-logos/1.jpeg'
+// import Jtlogo from '../../assets/JT-logos/1.jpeg'
 import ContactModal from '../Modal/ContactModal'
 
 
