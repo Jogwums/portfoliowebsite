@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
-
+import Jtlogo from '../../assets/JT-logos/1.jpeg'
 import ContactModal from '../Modal/ContactModal'
 
 
@@ -12,13 +12,15 @@ const Navigation = () => {
     return (
     <>
     <Navbar bg="dark" variant="dark" expand="md">
-        <Navbar.Brand href="/" rel="noreferrer" >Jonnyt</Navbar.Brand>
+        <Navbar.Brand href="/" rel="noreferrer">
+          Jt 
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="main"/>
         <Navbar.Collapse id="main">
 
           <Nav className="mr-auto">
             {/* <Nav.Link href="/">Portfolio</Nav.Link> */}
-            <Nav.Link rel="noreferrer" href="/data" ><ContactModal text={"Portfolio"} /></Nav.Link>
+            <Nav.Link rel="noreferrer" href="/data" >Portfolio</Nav.Link>
             <Nav.Link rel="noreferrer" target="_blank"
                     href="https://github.com/Jogwums">
                     Github
