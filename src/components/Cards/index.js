@@ -25,7 +25,8 @@ const Cards = () => {
                     </Col>
                     <Col>
                       <Card image={DataImg} text={"Data"} 
-                          link={"https://www.kaggle.com/jogwums"} />
+                          // link={"https://www.kaggle.com/jogwums"} />
+                          link={"https://public.tableau.com/app/profile/jonathan.ogwumike"} />
                     </Col>
                 </Row>
                 <Row >
