@@ -18,13 +18,16 @@ const DataPortfolio = () => {
             <Container>
                 <Row>
                     <Col>
-                      <Card image={Data2} text={"Tableau"} 
-                          link={"https://public.tableau.com/app/profile/jonathan.ogwumike"} />
-                    </Col>
-                    <Col md={12}>
-                     <Card image={Data1} 
-                            text={"Kaggle"} 
-                            link={"https://www.kaggle.com/jogwums"} />
+                      <div className="card-deck mt-5">
+                        <Card image={Data2} text={"Tableau"} 
+                                link={"https://public.tableau.com/app/profile/jonathan.ogwumike"} />
+                        <Card image={Data1} 
+                                text={"Kaggle"} 
+                                link={"https://www.kaggle.com/jogwums"}/>
+                        <Card image={Data2} 
+                                text={"PowerBI"} 
+                                link={"https://www.kaggle.com/jogwums"}/>
+                      </div>
                     </Col>
                 </Row>
                 </Container>

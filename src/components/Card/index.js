@@ -1,30 +1,21 @@
 import React from 'react';
 
 // styling
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+
 
 const Card = ({image, text, link}) => {
     return (
     <>
     <section id="scroll">
-            <Container className="container px-5">
-                <Row className="row gx-5 align-items-center">
-                    <Col className="col-lg-6 order-lg-2">
-                        <a href={link} target="_blank" rel="noreferrer">
-                        <div className="p-5">
-                            <img className="img-fluid rounded-circle" src={image} alt="..." /></div>
-                        </a>
-                    </Col>
-                    <Col className="col-lg-6 order-lg-1">
-                        <div className="p-5">
-                            <h2 className="display-4">For those who love {text}</h2>
-                            <p>Click the image to view more, you'll be redirected to the project website.</p>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
+            <div className="card rounded-lg" style={{width: "18.5rem", background:"transparent", border: "none"}}>
+            <a href={link} target="_blank" rel="noreferrer">
+            <img className="card-img-top rounded-circle" src={image} alt="..." />
+            </a>
+            <div className="card-body p-5">
+                <h3 className="card-title">If you love {text}</h3>
+                <p className="card-text">Click the image to view more, you'll be redirected to the project website.</p>
+            </div>
+            </div>
         </section>
     </>
   )

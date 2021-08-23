@@ -4,13 +4,17 @@ import Navigation from '../components/navbar'
 import Cards from '../components/Cards'
 import FooterDetails from '../components/Footer'
 import HeaderDetails from '../components/Header/'
+//stylling
+import Container from 'react-bootstrap/Container'
 
 const Home = () => {
     return (
         <div>
             <Navigation />
             <HeaderDetails />
-            <Cards />
+            <Container>
+                <Cards />
+            </Container>
             <FooterDetails />
         </div>
     )
