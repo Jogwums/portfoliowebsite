@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto !important;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,6 +10,7 @@ body {
 }
 .jumbotron {
   background-color: #fdfdfd !important;
+  margin: 0 auto;
 }
 img.img-fluid.rounded-circle:hover {
   opacity: 0.95;
