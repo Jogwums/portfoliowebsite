@@ -15,7 +15,7 @@ import FoodImg from "../../assets/img/04.jpg"
 const Cards = () => {
     return (
         <>
-              <Row>
+              <Row className="mt-4">
                 <Col md={12}>
                 <div className="card-deck">
                   <Card image={EcomImg} 

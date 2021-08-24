@@ -6,7 +6,7 @@ import React from 'react';
 const Card = ({image, text, link}) => {
     return (
     <>
-    <section id="scroll">
+    <section className="mx-auto" id="scroll">
             <div className="card rounded-lg" style={{width: "18.5rem", background:"transparent", border: "none"}}>
             <a href={link} target="_blank" rel="noreferrer">
             <img className="card-img-top rounded-circle" src={image} alt="..." />
