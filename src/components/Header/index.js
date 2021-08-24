@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container'
 // import Button from 'react-bootstrap/Button';
 // import FormControl from 'react-bootstrap/FormControl';
 
-const HeaderDetails = () => {
+const HeaderDetails = ({type, text}) => {
     return (
     <Jumbotron className="p-5">
       <Header className="masthead text-black">
@@ -14,8 +14,8 @@ const HeaderDetails = () => {
                 <Container className="container-fluid md-px-5">
                     <h1 className="masthead-heading mb-0">Jonathan Ogwumike</h1>
                     <br />
-                    <h6 className="masthead-subheading mb-0">Front-End Systems Developer</h6>
-                    <a className="btn btn-warning btn-xl rounded-pill mt-5" href="#scroll">Projects</a>
+                    <h6 className="masthead-subheading mb-0">{text}</h6>
+                    <a className="btn btn-warning btn-xl rounded-pill mt-5" href="#scroll">{type}</a>
                 </Container>
             </div>
         </Header>

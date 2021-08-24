@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div>
             <Navigation />
-            <HeaderDetails />
+            <HeaderDetails text="Front-End Systems Developer" type={"Projects"} />
             <Container>
                 <Cards />
             </Container>

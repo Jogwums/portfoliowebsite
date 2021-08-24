@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from '../components/Card'
 import Navigation from '../components/navbar'
+import HeaderDetails from '../components/Header/'
 // styling
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -11,10 +12,11 @@ import Data2 from "../assets/img/13.jpg"
 
 
 
-const DataPortfolio = () => {
+const DataPortfolio = ({type, text}) => {
     return (
         <>
             <Navigation />
+            <HeaderDetails type={"Data Analysis Projects"} text={text} />
             <Container>
                 <Row>
                     <Col>
