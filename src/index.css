@@ -10,6 +10,10 @@ body {
   background-color: #fdfdfd !important;
   margin: 0 auto;
 }
+.container{
+  margin: auto !important;
+}
+
 img.rounded-circle:hover {
   opacity: 0.95;
 }
