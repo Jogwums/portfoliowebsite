@@ -23,4 +23,8 @@ input.form-control, input.form-control:focus{
     *{
         margin: auto;
     }
+    .bar{
+        display: flex;
+        justify-content: space-between;
+    }
 }

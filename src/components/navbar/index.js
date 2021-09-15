@@ -11,10 +11,12 @@ const Navigation = () => {
 
     return (
     <>
-    <Navbar bg="dark" variant="dark" expand="md">
+    <Navbar className="bar" bg="dark" variant="dark" expand="md">
+        <Nav className="ml-1"> 
         <Navbar.Brand href="/" rel="noreferrer">
           Jt 
         </Navbar.Brand>
+        </Nav>
         <Navbar.Toggle aria-controls="main"/>
         <Navbar.Collapse id="main">
 
