@@ -28,7 +28,7 @@ const DataPortfolio = ({type, text}) => {
                                 link={"https://www.kaggle.com/jogwums"}/>
                         <Card image={Data2} 
                                 text={"PowerBI"} 
-                                link={"https://www.kaggle.com/jogwums"}/>
+                                link={"/pbi"}/>
                       </div>
                     </Col>
                 </Row>

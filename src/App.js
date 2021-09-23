@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './pages/Home';
 import DataPage from './pages/DataPortfolio'
 import ErrorPage from './pages/ErrorPage'
+import Da from './pages/Da';
 
 //test form
 
@@ -25,6 +26,9 @@ function App() {
         </Route>
         <Route path="/data">
           <DataPage />
+        </Route>
+        <Route path="/pbi">
+          <Da />
         </Route>
         <Route path="*">
           <ErrorPage />
