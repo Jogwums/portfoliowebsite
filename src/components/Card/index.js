@@ -12,7 +12,7 @@ const Card = ({image, text, link}) => {
             <img className="card-img-top rounded-circle" src={image} alt="..." />
             </a>
             <div className="card-body p-5">
-                <h3 className="card-title">If you love {text}</h3>
+                <h3 className="card-title">{text}</h3>
                 <p className="card-text">Click the image to view more, you'll be redirected to the project website.</p>
             </div>
             </div>
