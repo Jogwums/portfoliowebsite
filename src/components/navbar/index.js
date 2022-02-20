@@ -11,7 +11,7 @@ const Navigation = () => {
 
     return (
     <>
-    <Navbar className="bar" bg="dark" variant="dark" expand="md">
+    <Navbar className="bar sticky-top" bg="dark" variant="dark" expand="md">
         <Nav className="ml-1"> 
         <Navbar.Brand href="/" rel="noreferrer">
           Jt 

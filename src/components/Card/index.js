@@ -10,6 +10,7 @@ const Card = ({image, text, link}) => {
             <div className="card rounded-lg" style={{width: "18.5rem", background:"transparent", border: "none"}}>
             <a href={link} target="_blank" rel="noreferrer">
             <img className="card-img-top rounded-circle" src={image} alt="..." />
+            {/* <img className="card-img-top " src={image} alt="..." /> */}
             </a>
             <div className="card-body p-5">
                 <h3 className="card-title">{text}</h3>
