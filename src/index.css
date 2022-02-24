@@ -4,10 +4,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background: linear-gradient(90deg, #54f, #84f); */
+  /* purple #7856FF purple hover #6C4DE6 */
   background: linear-gradient(to bottom,#5544ff30,#5b58f83d);
 }
 .jumbotron {
-  background-color: #fdfdfd !important;
+  background-color: #6C4DE6 !important;
   margin: 0 auto;
 }
 .container{
