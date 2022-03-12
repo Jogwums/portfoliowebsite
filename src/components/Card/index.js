@@ -9,7 +9,7 @@ const Card = ({image, text, link}) => {
     <section className="mx-auto" id="scroll">
             <div className="card rounded-lg" style={{width: "18.5rem", background:"transparent", border: "none"}}>
             <a href={link} target="_blank" rel="noreferrer">
-            <img className="card-img-top rounded-circle" src={image} alt="..." />
+            <img className="card-img-top rounded-lg" src={image} alt="..." />
             {/* <img className="card-img-top " src={image} alt="..." /> */}
             </a>
             <div className="card-body p-5">
