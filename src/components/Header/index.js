@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container'
 
 const HeaderDetails = ({type, text}) => {
     return (
-    <div className="pl-5 bg-primary">
+    <div className="px-5 mx-auto bg-primary">
       <Header className="masthead text-black">
             <div className="masthead-content md-ml-5 md-pl-5">
                 <Container className="container-fluid md-px-5">
