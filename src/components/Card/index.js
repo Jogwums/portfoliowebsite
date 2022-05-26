@@ -3,7 +3,7 @@ import React from 'react';
 // styling
 
 
-const Card = ({image, text, link}) => {
+const Card = ({image, text, link, text2}) => {
     return (
     <>
     <section className="mx-auto" id="scroll">
@@ -14,7 +14,7 @@ const Card = ({image, text, link}) => {
             </a>
             <div className="card-body p-5">
                 <h3 className="card-title">{text}</h3>
-                <p className="card-text">Click the image to view more, you'll be redirected to the project website.</p>
+                <p className="card-text">{text2 ? text2 : "Click the image to view more, you'll be redirected to the project website."}</p>
             </div>
             </div>
         </section>
