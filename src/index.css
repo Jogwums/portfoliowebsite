@@ -29,3 +29,14 @@ code {
   padding: 1rem;
   
 }
+.herogrp{
+  position: absolute;
+  top: 30vh;
+}
+.heromsg{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

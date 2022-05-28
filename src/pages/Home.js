@@ -4,6 +4,8 @@ import Navigation from '../components/navbar'
 import Cards from '../components/Cards'
 import FooterDetails from '../components/Footer'
 import HeaderDetails from '../components/Header/'
+import HeroDetails from '../components/Hero Details'
+import Hero from '../components/Hero'
 //stylling
 import Container from 'react-bootstrap/Container'
 
@@ -11,10 +13,16 @@ const Home = () => {
     return (
         <div>
             <Navigation />
-            <HeaderDetails text="Front-End Systems Developer" type={"Projects"} />
-            <Container>
-                <Cards />
-            </Container>
+            <Hero>
+                {/* <div className="herogrp">
+                    <div className='heromsg'>
+                        <HeroDetails />
+                        <HeroDetails />
+                    </div>
+                </div> */}
+
+            </Hero>
+            <Cards></Cards>
             <FooterDetails />
         </div>
     )
