@@ -68,7 +68,7 @@ code {
     height: calc(720px - 480px);
   }
   .heromsg{
-    top: 40%;
+    top: 35%;
     left: 50%;
     font-size: smaller;
     color: #8f8eb63d;
