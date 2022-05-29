@@ -3,11 +3,11 @@ import React from 'react'
 import Navigation from '../components/navbar'
 import Cards from '../components/Cards'
 import FooterDetails from '../components/Footer'
-import HeaderDetails from '../components/Header/'
-import HeroDetails from '../components/Hero Details'
+// import HeaderDetails from '../components/Header/'
+// import HeroDetails from '../components/Hero Details'
 import Hero from '../components/Hero'
 //stylling
-import Container from 'react-bootstrap/Container'
+// import Container from 'react-bootstrap/Container'
 
 const Home = () => {
     return (

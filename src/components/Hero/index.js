@@ -4,7 +4,7 @@ import { Button, Container } from 'react-bootstrap'
 
 //images
 import bg_main from '../../assets/img/hero/jt2_no_bg.png'
-import bg_main2 from '../../assets/img/hero/jt2.jpg'
+// import bg_main2 from '../../assets/img/hero/jt2.jpg'
 
 const Hero = (props) => {
   return (
