@@ -29,6 +29,14 @@ code {
   padding: 1rem;
   
 }
+.hero{
+  background-image: url('./assets/img/hero/jt2_no_bg.png');
+  background-color: #5544ff30;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+  height: 720px;
+}
 .herogrp{
   position: absolute;
   top: 30vh;
@@ -39,4 +47,11 @@ code {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 420px) {
+  .hero{
+    background-size: contain;
+    height: calc(720px - 480px);
+  }
 }

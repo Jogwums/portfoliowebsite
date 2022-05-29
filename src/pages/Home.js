@@ -11,7 +11,7 @@ import Hero from '../components/Hero'
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Navigation />
             <Hero>
                 {/* <div className="herogrp">
@@ -24,7 +24,7 @@ const Home = () => {
             </Hero>
             <Cards></Cards>
             <FooterDetails />
-        </div>
+        </>
     )
 }
 
