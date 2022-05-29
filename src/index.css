@@ -35,7 +35,7 @@ code {
    url('./assets/img/hero/jt2_norm.jpg');
   background-color: #5544ff30;
   background-repeat: no-repeat;
-  /* background-position: center; */
+  background-position: center;
   background-size: cover;
   height: 720px;
 }
@@ -54,7 +54,7 @@ code {
 
 @media screen and (max-width: 420px) {
   .hero{
-    background-size: contain;
+    background-size: cover;
     height: calc(720px - 480px);
   }
 }
