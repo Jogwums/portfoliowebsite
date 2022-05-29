@@ -5,11 +5,11 @@ import { Button } from 'react-bootstrap'
 
 const HeroDetails = () => {
   return (
-    <div>
+    <>
       <h1>I am Jonathan Ogwumike</h1>
-      <p>And I'm a Business Analyst</p>
-      <Button variant='outline-primary'>Contact me</Button>
-    </div>
+      <p>And I'm a Data Analyst</p>
+      <Button size='lg' variant='outline-primary'>Portfolio</Button>
+    </>
   )
 }
 

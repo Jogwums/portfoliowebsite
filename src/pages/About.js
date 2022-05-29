@@ -1,62 +1,38 @@
 import React from 'react'
 
-import Navbar from '../components/navbar/index';
-import dots_cyan from  '../assets/images/illustrations/dots-cyan.png';
-import author from  '../assets/images/about/author.jpg';
+
+import author from  '../assets/img/hero/jt_no_bg_grey.png';
 import signature from  '../assets/images/about/signature.png';
 
 // icons
-import {FaLinkedin, FaFacebookF, FaTwitter, FaGithub, FaInstagram, FaFacebook } from 'react-icons/fa'
+import {FaLinkedin, FaFacebookF, FaTwitter, FaGithub, FaKaggle } from 'react-icons/fa'
 
 const About = () => {
   return (
     <>
-    <Navbar />
-    <section className="jumbotron hero-area " id="parallax">
+    <section className="jumbotron hero-area" id="parallax">
   <div className="container">
     <div className="row">
       <div className="col-lg-11 mx-auto">
-        <h1 className="text-white font-tertiary">Hi! I’m <br /> Jonathan <br /> Solutions Expert</h1>
+        <h1 className="text-white font-tertiary">
+        <br /> Solutions Expert | Quick Links
+        {/* <br/> Proper Prior Planning Prevents Poor Performance<br/> */}
+        </h1>
       </div>
     </div>
   </div>
-  <div className="layer-bg w-100">
-    <img className="img-fluid w-100" src="images/illustrations/leaf-bg.png" alt="bg-shape" />
-  </div>
-  <div className="layer" id="l2">
-    <img src={dots_cyan} alt="bg-shape" />
-  </div>
-  <div className="layer" id="l3">
-    <img src="images/illustrations/leaf-orange.png" alt="bg-shape" />
-  </div>
-  <div className="layer" id="l4">
-    <img src="images/illustrations/dots-orange.png" alt="bg-shape" />
-  </div>
-  <div className="layer" id="l5">
-    <img src="images/illustrations/leaf-yellow.png" alt="bg-shape" />
-  </div>
-  <div className="layer" id="l6">
-    <img src="images/illustrations/leaf-cyan.png" alt="bg-shape" />
-  </div>
-  <div className="layer" id="l7">
-    <img src="images/illustrations/dots-group-orange.png" alt="bg-shape" />
-  </div>
-  <div className="layer" id="l8">
-    <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape" />
-  </div>
-  <div className="layer" id="l9">
-    <img src="images/illustrations/leaf-cyan-2.png" alt="bg-shape" />
-  </div>
+  
   {/* <!-- social icon --> */}
+  <div className="socials">
   <ul className="list-unstyled ml-5 mt-3 position-relative zindex-1">
-    <li className='mb-3'><a className='text-white' href="/"><FaTwitter /></a></li>
-    <li className='mb-3'><a className='text-white' href="/"><FaInstagram /></a></li>
-    <li className='mb-3'><a className='text-white' href="/"><FaFacebook /></a></li>
-    <li className='mb-3'><a className='text-white' href="/"><FaFacebookF /></a></li>
-    <li className='mb-3'><a className='text-white' href="/"><FaGithub /></a></li>
-    <li className='mb-3'><a className='text-white' href="/"><FaLinkedin /></a></li>
+    <li className='mb-3'><a className='text-white' href="/"><FaTwitter size={`2em`} /></a></li>
+    <li className='mb-3'><a className='text-white' href="/"><FaFacebookF size={`2em`} /></a></li>
+    <li className='mb-3'><a className='text-white' href="/"><FaGithub size={`2em`} /></a></li>
+    <li className='mb-3'><a className='text-white' href="/"><FaKaggle size={`2em`} /></a></li>
+    <li className='mb-3'><a className='text-white' href="/"><FaLinkedin size={`2em`} /></a></li>
     
   </ul>
+  </div>
   {/* <!-- /social icon --> */}
 </section>
 <section className="section pt-5">

@@ -1,13 +1,11 @@
 import React from 'react'
 
 const Hero = (props) => {
-  const {nav, text} = props
   return (
     <>
         <div className='hero'>
-            {nav}
+              {props.children}
             <div className='heromsg'>
-                {text}
             </div>
         </div>
         
