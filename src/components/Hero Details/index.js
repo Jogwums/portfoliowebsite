@@ -8,7 +8,9 @@ const HeroDetails = () => {
     <>
       <h1>I am Jonathan Ogwumike</h1>
       <p>And I'm a Data Analyst</p>
-      <Button size='lg' variant='outline-primary'>Portfolio</Button>
+      <Button href='/data' size='lg' variant='outline-primary'>
+        Portfolio
+      </Button>
     </>
   )
 }

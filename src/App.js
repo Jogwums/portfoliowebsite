@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 //pages
 import Home from './pages/Home';
-// import About from './pages/About';
+import Portfolio from './pages/Portfolio'
 import DataPage from './pages/DataPortfolio'
 import ErrorPage from './pages/ErrorPage'
 import Da from './pages/Da';
@@ -25,9 +25,9 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        {/* <Route exact path="/about">
-          <About />
-        </Route> */}
+        <Route exact path="/portfolio">
+          <Portfolio />
+        </Route>
         <Route path="/data">
           <DataPage />
         </Route>
