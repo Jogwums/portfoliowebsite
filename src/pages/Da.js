@@ -35,6 +35,12 @@ const Da = ({type, text}) => {
             text2={"You will be redirected to the report"}
             link={"https://app.powerbi.com/reportEmbed?reportId=45bbd2da-2fef-4fc2-9c9e-f6af8da5328e&autoAuth=true&ctid=e28e2cde-f37f-45db-bace-a4b1dd277623&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWFmcmljYS1ub3J0aC1hLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D"}
         />
+        <Card
+        image={image1}
+        text={"Car Sales Analysis"}
+        text2={"Report shows Client records and Inventory"}
+         link={"https://app.powerbi.com/view?r=eyJrIjoiNzBjYTVlYzEtZDExMS00ZmRiLTg2MTQtMjY1ZGU1YWY4YTg5IiwidCI6ImUyOGUyY2RlLWYzN2YtNDVkYi1iYWNlLWE0YjFkZDI3NzYyMyJ9"}
+         />
         </div>
         </>
     )
