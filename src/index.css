@@ -9,6 +9,7 @@ body {
   /* background: linear-gradient(90deg, #54f, #84f); */
   /* purple #7856FF purple hover #6C4DE6 */
   background: linear-gradient(to bottom,#5544ff30,#5b58f83d);
+  overflow-x: hidden;
 }
 .jumbotron {
   background-color: #6C4DE6 !important;
@@ -103,7 +104,7 @@ code {
   text-align: center;
   position: absolute;
   top: 10%;
-  left: 50%;
+  left: 0%;
   transform: translate(50%, 50%);
   color: white;
 }

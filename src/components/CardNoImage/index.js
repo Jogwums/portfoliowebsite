@@ -2,7 +2,6 @@ import React from 'react';
 
 // styling
 
-
 const CardNoImage = ({text, link, text2}) => {
     return (
     <>
