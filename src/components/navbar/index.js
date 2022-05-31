@@ -22,7 +22,7 @@ const Navigation = () => {
 
           <Nav className="mr-auto">
             {/* <Nav.Link href="/">Portfolio</Nav.Link> */}
-            <Nav.Link rel="noreferrer" href="/data" >Portfolio</Nav.Link>
+            <Nav.Link rel="noreferrer" href="/portfolio" >Portfolio</Nav.Link>
             <Nav.Link rel="noreferrer" target="_blank"
                     href="https://github.com/Jogwums">
                     Github

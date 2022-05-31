@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0 auto !important;
   font-family: 'Poppins', 'Roboto', sans-serif !important;
@@ -59,8 +62,52 @@ code {
 }
 .socials > ul > li > a{
   height: 50px;
-
 }
+
+/* portfolio page */
+.portfolio-home{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+}
+
+.portfolio-card-da{
+  background-image: linear-gradient(rgba(0, 0, 0, 0),
+   rgba(0, 0, 0, 0)),
+   url('./assets/img/bg/taxi.jpg');
+  background-color: #5544ff30;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 720px;
+}
+.portfolio-card-ds{
+  background-image: linear-gradient(rgba(0, 0, 0, 0),
+   rgba(0, 0, 0, 0)),
+   url('./assets/img/bg/cloud.jpg');
+  background-color: #5544ff30;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 720px;
+}
+.portfolio-card-text-da{
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  transform: translate(50%, 50%);
+  color: white;
+}
+.portfolio-card-text-ds{
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(50%, 50%);
+  color: white;
+}
+/* media queries  */
 
 @media screen and (max-width: 420px) {
   .hero{

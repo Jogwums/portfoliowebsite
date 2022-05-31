@@ -1,7 +1,9 @@
 import React from 'react'
-import Card from '../components/Card'
 
-import HeaderDetails from '../components/Header/'
+// components
+import Card from '../components/Card'
+import HeaderDetails from '../components/Header'
+
 // styling
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -10,30 +12,29 @@ import Col from 'react-bootstrap/Col'
 import Data1 from "../assets/img/08.jpg"
 import Data2 from "../assets/img/13.jpg"
 
-
-
-const DataPortfolio = ({type, text}) => {
-    return (
-        <>
+const DesignPortfolio = ({text, }) => {
+  return (
+    <>
             <Container>
+            <div>DesignPortfolio</div>
             <HeaderDetails type={"Data Projects"} text={text} />
                 <Row>
                     <Col>
                       <div className="card-deck mt-5">
-                        <Card image={Data2} text={"Tableau"} 
+                        <Card image={Data2} text={"Eccomerce"} 
                                 link={"https://public.tableau.com/app/profile/jonathan.ogwumike"} />
                         <Card image={Data1} 
-                                text={"Kaggle"} 
+                                text={"Crypto"} 
                                 link={"https://www.kaggle.com/jogwums"}/>
                         <Card image={Data2} 
-                                text={"PowerBI"} 
+                                text={"Budget"} 
                                 link={"/pbi"}/>
                       </div>
                     </Col>
                 </Row>
                 </Container>
-        </>
-    )
+    </>
+  )
 }
 
-export default DataPortfolio
+export default DesignPortfolio

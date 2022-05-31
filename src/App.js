@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio'
 import DataPage from './pages/DataPortfolio'
+import DesignPage from './pages/DesignPortfolio'
 import ErrorPage from './pages/ErrorPage'
 import Da from './pages/Da';
 
@@ -30,6 +31,9 @@ function App() {
         </Route>
         <Route path="/data">
           <DataPage />
+        </Route>
+        <Route path="/design">
+          <DesignPage />
         </Route>
         <Route path="/pbi">
           <Da />
