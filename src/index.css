@@ -41,7 +41,7 @@ code {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 720px;
+  height: 100vh;
 }
 .herogrp{
   position: absolute;
