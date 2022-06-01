@@ -9,6 +9,7 @@ import Col from 'react-bootstrap/Col'
 // assets
 import Data1 from "../assets/img/08.jpg"
 import Data2 from "../assets/img/13.jpg"
+import Navigation from '../components/navbar'
 
 
 
@@ -16,6 +17,7 @@ const DataPortfolio = ({type, text}) => {
     return (
         <>
             <Container>
+                <Navigation />
             <HeaderDetails type={"Data Projects"} text={text} />
                 <Row>
                     <Col>

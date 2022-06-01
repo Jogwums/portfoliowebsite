@@ -11,12 +11,13 @@ import Col from 'react-bootstrap/Col'
 // assets
 import Data1 from "../assets/img/08.jpg"
 import Data2 from "../assets/img/13.jpg"
+import Navigation from '../components/navbar'
 
 const DesignPortfolio = ({text, }) => {
   return (
     <>
             <Container>
-            <div>DesignPortfolio</div>
+            <Navigation />
             <HeaderDetails type={"Data Projects"} text={text} />
                 <Row>
                     <Col>
