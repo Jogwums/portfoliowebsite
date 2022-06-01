@@ -18,18 +18,32 @@ const DesignPortfolio = ({text, }) => {
     <>
             <Container>
             <Navigation />
-            <HeaderDetails type={"Data Projects"} text={text} />
+            <HeaderDetails type={"Design Projects"} text={text} />
                 <Row>
                     <Col>
                       <div className="card-deck mt-5">
                         <Card image={Data2} text={"Eccomerce"} 
-                                link={"https://public.tableau.com/app/profile/jonathan.ogwumike"} />
+                                link={"https://joe-e-commerce-project-1462e2.netlify.app/"} />
                         <Card image={Data1} 
                                 text={"Crypto"} 
-                                link={"https://www.kaggle.com/jogwums"}/>
+                                link={"https://crypto-tracker-app-f80ecc.netlify.app/"}/>
                         <Card image={Data2} 
                                 text={"Budget"} 
-                                link={"/pbi"}/>
+                                link={"https://budget-calculator-ce321d.netlify.app/"}/>
+                      </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                      <div className="card-deck mt-5">
+                        <Card image={Data2} text={"Jokes"} 
+                                link={"https://react-jokes-app-86180c.netlify.app/"} />
+                        <Card image={Data1} 
+                                text={"Recipes"} 
+                                link={"https://react-recipe-app-9a0239.netlify.app/"}/>
+                        <Card image={Data2} 
+                                text={"APIs"} 
+                                link={"/"}/>
                       </div>
                     </Col>
                 </Row>
