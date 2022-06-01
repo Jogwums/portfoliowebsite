@@ -16,9 +16,9 @@ import Navigation from '../components/navbar'
 const DataPortfolio = ({type, text}) => {
     return (
         <>
-            <Container>
-                <Navigation />
+            <Navigation />
             <HeaderDetails type={"Data Projects"} text={text} />
+            <Container>
                 <Row>
                     <Col>
                       <div className="card-deck mt-5">

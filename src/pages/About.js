@@ -5,7 +5,7 @@ import author from  '../assets/img/hero/jt_no_bg_grey.png';
 import signature from  '../assets/images/about/signature.png';
 
 // icons
-import {FaLinkedin, FaFacebookF, FaTwitter, FaGithub, FaKaggle } from 'react-icons/fa'
+import {FaLinkedin, FaGithub, FaKaggle } from 'react-icons/fa'
 
 const About = () => {
   return (
@@ -24,12 +24,13 @@ const About = () => {
   
   {/* <!-- social icon --> */}
   <div className="socials">
-  <ul className="list-unstyled ml-5 mt-3 position-relative zindex-1">
-    <li className='mb-3'><a className='text-white' href="/"><FaTwitter size={`2em`} /></a></li>
-    <li className='mb-3'><a className='text-white' href="/"><FaFacebookF size={`2em`} /></a></li>
-    <li className='mb-3'><a className='text-white' href="/"><FaGithub size={`2em`} /></a></li>
-    <li className='mb-3'><a className='text-white' href="/"><FaKaggle size={`2em`} /></a></li>
-    <li className='mb-3'><a className='text-white' href="/"><FaLinkedin size={`2em`} /></a></li>
+  <ul className="list-unstyled mt-3 position-relative zindex-1">
+    {/* <li className='mb-3'><a className='text-white' href="/"><FaTwitter size={`2em`} /></a></li> */}
+    {/* <li className='mb-3'><a className='text-white' href="/"><FaFacebookF size={`2em`} /></a></li> */}
+    <li className='mb-3'><a className='text-white' href="https://github.com/Jogwums"><FaGithub size={`2em`} /></a></li>
+    <li className='mb-3'><a className='text-white' href="https://www.kaggle.com/jogwums"><FaKaggle size={`2em`} /></a></li>
+    <li className='mb-3'><a className='text-white' href="https://www.linkedin.com/in/jonathan-ogwumike012016/">
+      <FaLinkedin size={`2em`} /></a></li>
     
   </ul>
   </div>
@@ -44,9 +45,12 @@ const About = () => {
         <p>Experienced trainer and developer, working with SQL, Microsoft Excel, Power BI, Python, JavaScript, ReactJS, 
           SPSS, SigmaPlot, Grapher12, Streamlit, CSS, HTML, Bootstrap, Tailwind and other technologies 
           for data analysis, web development and machine learning.</p>
-        <p>Deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
+        <div >
+          <blockquote>
+          A Jack of All Trades is a Master of None. 
+          But Oftentimes better than a Master of One
+          </blockquote>
+        </div>
       </div>
       <div className="col-md-4 text-center drag-lg-top">
         <div className="shadow-down mb-4">
