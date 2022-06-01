@@ -113,10 +113,10 @@ code {
 @media screen and (max-width: 420px) {
   .hero{
     background-size: cover;
-    height: calc(720px - 480px);
+    height: 720px;
   }
   .heromsg{
-    top: 35%;
+    top: 50%;
     left: 50%;
     font-size: smaller;
     color: #8f8eb63d;
@@ -126,5 +126,15 @@ code {
   }
   .heromsg button{
     size: sm;
+  }
+  .portfolio-card-text-da, .portfolio-card-text-ds{
+    position: unset;
+    transform: unset;
+    top: 0px;
+    left: 0px;
+    margin: 0 auto;
+
+
+
   }
 }
