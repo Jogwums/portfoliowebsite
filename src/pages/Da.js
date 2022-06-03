@@ -20,19 +20,19 @@ const Da = ({type, text}) => {
         <Card image={image1} 
                         text={"Report on World Covid-19 Outbreak"} 
                         text2={"You will be redirected to the report"}
-                        link={"https://app.powerbi.com/reportEmbed?reportId=131418d5-442b-488a-a088-3913e1255a84&autoAuth=true&ctid=e28e2cde-f37f-45db-bace-a4b1dd277623&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWFmcmljYS1ub3J0aC1hLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D"} />
+                        link={"https://app.powerbi.com/view?r=eyJrIjoiMWNkYzJkOGYtNDlhZS00NTVjLWEyNTgtYzNiMmUyZDEzNGE5IiwidCI6ImUyOGUyY2RlLWYzN2YtNDVkYi1iYWNlLWE0YjFkZDI3NzYyMyJ9"} />
 
         <Card
             image={image3}
             text={"World Population Report"}
             text2={"You will be redirected to the report"}
-            link={"https://app.powerbi.com/reportEmbed?reportId=283c0606-8fa6-4cb4-b66d-236157b1a667&autoAuth=true&ctid=e28e2cde-f37f-45db-bace-a4b1dd277623&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWFmcmljYS1ub3J0aC1hLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D"}
+            link={"https://app.powerbi.com/view?r=eyJrIjoiMTU4NGU1MjQtMmUxMy00NzNhLTgxMGYtMzVhZmVhNWZmMzRlIiwidCI6ImUyOGUyY2RlLWYzN2YtNDVkYi1iYWNlLWE0YjFkZDI3NzYyMyJ9"}
         />
         <Card
             image={image2}
             text={"Plane Crashes Worldwide"}
             text2={"You will be redirected to the report"}
-            link={"https://app.powerbi.com/reportEmbed?reportId=45bbd2da-2fef-4fc2-9c9e-f6af8da5328e&autoAuth=true&ctid=e28e2cde-f37f-45db-bace-a4b1dd277623&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWFmcmljYS1ub3J0aC1hLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D"}
+            link={"https://app.powerbi.com/view?r=eyJrIjoiMjJmNTcxNmMtOGE1NS00NzhjLTg5MmMtZGEwYzE3NjIxNTA5IiwidCI6ImUyOGUyY2RlLWYzN2YtNDVkYi1iYWNlLWE0YjFkZDI3NzYyMyJ9"}
         />
         <Card
         image={image4}
