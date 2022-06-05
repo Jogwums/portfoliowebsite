@@ -5,7 +5,7 @@ import TitleDetails from '../components/Title/'
 import Card from '../components/Card'
 
 // images 
-import image1 from '../assets/img/pbiprojects/pbi1.JPG'
+import image1 from '../assets/img/pyprojects/Nigeria-Food-market.webp'
 import image2 from '../assets/img/pbiprojects/pbi2.JPG'
 import image3 from '../assets/img/pbiprojects/pbi3.JPG'
 import image4 from '../assets/img/pbiprojects/pbi4.JPG'
@@ -15,12 +15,12 @@ const Da = ({type, text}) => {
     return (
         <>
         <Navigation />
-        <TitleDetails title="Power BI Reports" text=""/>
+        <TitleDetails title="Python Apps" text=""/>
         <div className="card-deck">
         <Card image={image1} 
-                        text={"Report on World Covid-19 Outbreak"} 
+                        text={"Nigerian Food Prices App"} 
                         text2={"You will be redirected to the report"}
-                        link={"https://app.powerbi.com/view?r=eyJrIjoiMWNkYzJkOGYtNDlhZS00NTVjLWEyNTgtYzNiMmUyZDEzNGE5IiwidCI6ImUyOGUyY2RlLWYzN2YtNDVkYi1iYWNlLWE0YjFkZDI3NzYyMyJ9"} />
+                        link={"https://share.streamlit.io/jogwums/streamlit-food-prices/main/nigerianfoods.py"} />
 
         <Card
             image={image3}

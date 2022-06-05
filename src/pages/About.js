@@ -10,7 +10,7 @@ import {FaLinkedin, FaGithub, FaKaggle } from 'react-icons/fa'
 const About = () => {
   return (
     <>
-    <section className="jumbotron my-0 py-0" id="parallax">
+    <section className="jumbotron my-0 py-0 bg-primary" id="parallax">
   <div className="container">
     <div className="row">
       <div className="col-lg-11 mx-auto">

@@ -1,15 +1,21 @@
 import React from 'react'
+import bootstrapUtils from 'react-bootstrap'
+import Button from 'react-bootstrap/Button'
 
-import { Button as Btn } from 'react-bootstrap'
+bootstrapUtils.addStyle(Button, 'custom');
 
-const Button = ({text, type, size}) => {
-  return (
-    <>
-        <Btn variant={type} size={size}>
-            {text}
-        </Btn>
-    </>
-  )
-}
+const customButtonStyle = (
+  <div>
+    <style type="text/css">
+      {`
+    .btn-custom {
+        background-color: purple;
+        color: white;
+    }
+    `}
+    </style>
+    <Button bsStyle="custom">Custom</Button>
+  </div>
+);
 
-export default Button
+export default (customButtonStyle);

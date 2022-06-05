@@ -4,13 +4,12 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 //pages
 import Home from './pages/Home';
-import Portfolio from './pages/Portfolio'
-import DataPage from './pages/DataPortfolio'
-import DesignPage from './pages/DesignPortfolio'
-import ErrorPage from './pages/ErrorPage'
+import Portfolio from './pages/Portfolio';
+import DataPage from './pages/DataPortfolio';
+import DesignPage from './pages/DesignPortfolio';
+import ErrorPage from './pages/ErrorPage';
 import Da from './pages/Da';
-
-//test form
+import Py from './pages/Py';
 
 // import FormComponent from './components/Signup Form'
 
@@ -37,6 +36,9 @@ function App() {
         </Route>
         <Route path="/pbi">
           <Da />
+        </Route>
+        <Route path="/python">
+          <Py />
         </Route>
         <Route path="*">
           <ErrorPage />

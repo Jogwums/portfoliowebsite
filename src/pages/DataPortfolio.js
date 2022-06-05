@@ -20,7 +20,7 @@ const DataPortfolio = ({type, text}) => {
             <HeaderDetails type={"Data Projects"} text={text} />
             <Container>
                 <Row>
-                    <Col>
+                    <Col lg={12}>
                       <div className="card-deck mt-5">
                         <Card image={Data2} text={"Tableau"} 
                                 link={"https://public.tableau.com/app/profile/jonathan.ogwumike"} />
@@ -30,6 +30,21 @@ const DataPortfolio = ({type, text}) => {
                         <Card image={Data2} 
                                 text={"PowerBI"} 
                                 link={"/pbi"}/>
+                      </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                      <div className="card-deck mt-5">
+                        <Card image={Data1} 
+                                text={"Python"} 
+                                link={"/python"}/>
+                        <Card image={Data1} 
+                                text={"Github"} 
+                                link={"/https://github.com/Jogwums"}/>
+                        <Card image={Data1} 
+                                text={"Python"} 
+                                link={"/python"}/>
                       </div>
                     </Col>
                 </Row>
