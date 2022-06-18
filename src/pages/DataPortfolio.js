@@ -7,8 +7,9 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 // assets
-import Data1 from "../assets/img/08.jpg"
-import Data2 from "../assets/img/13.jpg"
+// images
+// 'https://picsum.photos/200.webp?grayscale?random=1'
+// "http://placeimg.com/200/200/tech"
 import Navigation from '../components/navbar'
 
 
@@ -22,12 +23,12 @@ const DataPortfolio = ({type, text}) => {
                 <Row>
                     <Col lg={12}>
                       <div className="card-deck mt-5">
-                        <Card image={Data2} text={"Tableau"} 
+                        <Card image={"http://placeimg.com/200/200/tech"} text={"Tableau"} 
                                 link={"https://public.tableau.com/app/profile/jonathan.ogwumike"} />
-                        <Card image={Data1} 
+                        <Card image={'https://picsum.photos/200.webp?grayscale?random=2'} 
                                 text={"Kaggle"} 
                                 link={"https://www.kaggle.com/jogwums"}/>
-                        <Card image={Data2} 
+                        <Card image={'https://picsum.photos/200.webp?grayscale?random=1'} 
                                 text={"PowerBI"} 
                                 link={"/pbi"}/>
                       </div>
@@ -36,13 +37,13 @@ const DataPortfolio = ({type, text}) => {
                 <Row>
                     <Col>
                       <div className="card-deck mt-5">
-                        <Card image={Data1} 
+                        <Card image={'https://picsum.photos/200.webp?grayscale?random=3'} 
                                 text={"Python"} 
                                 link={"/python"}/>
-                        <Card image={Data1} 
+                        <Card image={'https://picsum.photos/200.webp?grayscale?random=4'} 
                                 text={"Github"} 
                                 link={"/https://github.com/Jogwums"}/>
-                        <Card image={Data1} 
+                        <Card image={'https://picsum.photos/200.webp?grayscale?random=5'} 
                                 text={"Python"} 
                                 link={"/python"}/>
                       </div>
