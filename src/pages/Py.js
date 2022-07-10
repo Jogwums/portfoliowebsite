@@ -7,7 +7,7 @@ import Card from '../components/Card'
 // images 
 import image1 from '../assets/img/pyprojects/Nigeria-Food-market.webp'
 import image2 from '../assets/img/pbiprojects/pbi2.JPG'
-import image3 from '../assets/img/pbiprojects/pbi3.JPG'
+import image3 from '../assets/img/pyprojects/salary.png'
 import image4 from '../assets/img/pbiprojects/pbi4.JPG'
 
 const Da = ({type, text}) => {
@@ -24,9 +24,9 @@ const Da = ({type, text}) => {
 
         <Card
             image={image3}
-            text={"World Population Report"}
+            text={"Developer Salary 2021 (Stack Overflow Survey)"}
             text2={"You will be redirected to the report"}
-            link={"https://app.powerbi.com/view?r=eyJrIjoiMTU4NGU1MjQtMmUxMy00NzNhLTgxMGYtMzVhZmVhNWZmMzRlIiwidCI6ImUyOGUyY2RlLWYzN2YtNDVkYi1iYWNlLWE0YjFkZDI3NzYyMyJ9"}
+            link={"https://jogwums-streamlit-salary-prediction-app-z3z08g.streamlitapp.com/"}
         />
         <Card
             image={image2}
