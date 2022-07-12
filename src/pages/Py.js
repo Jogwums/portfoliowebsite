@@ -8,7 +8,7 @@ import Card from '../components/Card'
 import image1 from '../assets/img/pyprojects/Nigeria-Food-market.webp'
 import image2 from '../assets/img/pbiprojects/pbi2.JPG'
 import image3 from '../assets/img/pyprojects/salary.png'
-import image4 from '../assets/img/pbiprojects/pbi4.JPG'
+import image4 from '../assets/img/pyprojects/titanic.jpeg'
 
 const Da = ({type, text}) => {
 
