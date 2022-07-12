@@ -36,9 +36,9 @@ const Da = ({type, text}) => {
         />
         <Card
         image={image4}
-        text={"Car Sales Analysis"}
+        text={"Classical ML Prediction (Titanic)"}
         text2={"Report shows Client records and Inventory"}
-         link={"https://app.powerbi.com/view?r=eyJrIjoiNzBjYTVlYzEtZDExMS00ZmRiLTg2MTQtMjY1ZGU1YWY4YTg5IiwidCI6ImUyOGUyY2RlLWYzN2YtNDVkYi1iYWNlLWE0YjFkZDI3NzYyMyJ9"}
+         link={"https://jogwums-streamlit-titanic-app-sc1rsj.streamlitapp.com/"}
          />
          
         </div>
