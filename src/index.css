@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
 html{
   scroll-behavior: smooth;
+  font-family: 'DynaPuff', cursive !important;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'DynaPuff', cursive !important;
 }
 body {
   margin: 0 auto !important;
-  font-family: 'Poppins', 'Roboto', sans-serif !important;
+  font-family: 'DynaPuff', cursive !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background: linear-gradient(90deg, #54f, #84f); */
@@ -34,6 +39,7 @@ code {
   
 }
 .hero{
+  font-family: 'DynaPuff', cursive !important;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1),
    rgba(0, 0, 0, 0.2)),
    url('./assets/img/hero/jt2_norm.jpg');
@@ -67,6 +73,7 @@ code {
 
 /* portfolio page */
 .portfolio-home{
+  font-family: 'DynaPuff', cursive !important;
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: white;
