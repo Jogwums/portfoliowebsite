@@ -5,7 +5,7 @@ import author from  '../assets/img/hero/jt_no_bg_grey.png';
 import signature from  '../assets/images/about/signature.png';
 
 // icons
-import {FaLinkedin, FaGithub, FaKaggle } from 'react-icons/fa'
+import {FaLinkedin, FaGithub, FaKaggle, FaCertificate } from 'react-icons/fa'
 
 const About = () => {
   return (
@@ -26,11 +26,11 @@ const About = () => {
   <div className="socials py-2">
   <ul className="list-unstyled mt-3 position-relative zindex-1">
     {/* <li className='mb-3'><a className='text-white' href="/"><FaTwitter size={`2em`} /></a></li> */}
-    {/* <li className='mb-3'><a className='text-white' href="/"><FaFacebookF size={`2em`} /></a></li> */}
     <li className='mb-3'><a className='text-white' href="https://github.com/Jogwums"><FaGithub size={`2em`} /></a></li>
     <li className='mb-3'><a className='text-white' href="https://www.kaggle.com/jogwums"><FaKaggle size={`2em`} /></a></li>
     <li className='mb-3'><a className='text-white' href="https://www.linkedin.com/in/jonathan-ogwumike012016/">
       <FaLinkedin size={`2em`} /></a></li>
+    <li className='mb-3'><a className='text-white' href="/certs"><FaCertificate size={`2em`} /></a></li>
     
   </ul>
   </div>

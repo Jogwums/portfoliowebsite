@@ -11,16 +11,31 @@ const Certs = ({type, text}) => {
         <>
         <Navigation />
         <TitleDetails title="Certifications" text=""/>
-        <div className="card-deck bg-white">
-         <iframe
-            loading='lazy'
-            title='Certificate '
-            src="http://credentials.corporatefinanceinstitute.com/embed/2506cb31-d02f-4415-812f-0146f242caa5"
-            width="800"
-            height="600"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
+        <div className="container bg-black">
+         <div className="row">
+            <div className="col-md-6">
+            <iframe
+                loading='lazy'
+                title='Certificate '
+                src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/58067955"
+                width="600"
+                height="400"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+            </div>
+            <div className="col-md-6">
+            <iframe
+                loading='lazy'
+                title='Certificate '
+                src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/54582373"
+                width="600"
+                height="400"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+            </div>
+         </div>
         </div>
         </>
     )
