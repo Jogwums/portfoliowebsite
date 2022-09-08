@@ -10,6 +10,7 @@ import DesignPage from './pages/DesignPortfolio';
 import ErrorPage from './pages/ErrorPage';
 import Da from './pages/Da';
 import Py from './pages/Py';
+import Certs from './pages/certifications';
 
 // import FormComponent from './components/Signup Form'
 
@@ -39,6 +40,9 @@ function App() {
         </Route>
         <Route path="/python">
           <Py />
+        </Route>
+        <Route path="/certs">
+          <Certs />
         </Route>
         <Route path="*">
           <ErrorPage />

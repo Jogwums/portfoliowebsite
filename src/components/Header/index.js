@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container'
 
 const HeaderDetails = ({main, type, text}) => {
     return (
-    <Jumbotron fluid className='py-4 my-0 mx-auto bg-primary'>
+    <Jumbotron fluid className='py-4 my-0 mx-auto'>
       <Container >
         <h1>{type}</h1>
         <p></p>

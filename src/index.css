@@ -11,13 +11,26 @@ body {
   font-family: 'DynaPuff', cursive !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background: linear-gradient(90deg, #54f, #84f); */
-  /* purple #7856FF purple hover #6C4DE6 */
-  background: linear-gradient(to bottom,#5544ff30,#5b58f83d);
+  /* background: linear-gradient(90deg,#000,#0f0f0f); */
+  /* color: #f3f3f3; */
+  background: linear-gradient(45deg,#fff,#ccc);
+  color: #000;
   overflow-x: hidden;
+  word-spacing: .5rem;
 }
+/* Navbar  */
+.bar{
+  background: linear-gradient(90deg,#000,#0f0f0f) !important;
+  color: #f3f3f3;
+}
+/* Footer */
+.footer{
+  background: linear-gradient(90deg,#000,#0f0f0f) !important;
+  color: #f3f3f3;
+}
+
 .jumbotron {
-  background-color: #6C4DE6 !important;
+  background-color: #000 !important;
   margin: 0 auto;
 }
 .container{
@@ -70,6 +83,15 @@ code {
 .socials > ul > li > a{
   height: 50px;
 }
+/* lead and blockquote section */
+.lead, .blockquote {
+  line-height: 2em;
+}
+
+/* About page */
+.about-section{
+  color: #0f0f0f !important;
+}
 
 /* portfolio page */
 .portfolio-home{
@@ -80,9 +102,7 @@ code {
 }
 
 .portfolio-card-da{
-  background-image: linear-gradient(rgba(0, 0, 0, 0),
-   rgba(0, 0, 0, 0)),
-   url('./assets/img/bg/taxi.jpg');
+  background-image: url('./assets/img/bg/bg1.jpg');
   background-color: #5544ff30;
   background-repeat: no-repeat;
   background-position: center;
@@ -92,7 +112,7 @@ code {
 .portfolio-card-ds{
   background-image: linear-gradient(rgba(0, 0, 0, 0),
    rgba(0, 0, 0, 0)),
-   url('./assets/img/bg/cloud.jpg');
+   url('./assets/img/bg/12.jpg');
   background-color: #5544ff30;
   background-repeat: no-repeat;
   background-position: center;
@@ -115,6 +135,11 @@ code {
   transform: translate(50%, 50%);
   color: white;
 }
+/* Page titles */
+.subtitle{
+  color: #f3f3f3 !important;
+}
+
 /* media queries  */
 
 @media screen and (max-width: 460px) {

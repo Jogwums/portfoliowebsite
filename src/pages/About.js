@@ -10,7 +10,7 @@ import {FaLinkedin, FaGithub, FaKaggle } from 'react-icons/fa'
 const About = () => {
   return (
     <>
-  <section className="jumbotron my-0 py-0 bg-primary" id="parallax">
+  <section className="jumbotron my-0 py-0" id="parallax">
   <div className="container">
     <div className="row">
       <div className="col-lg-9 mx-auto">
@@ -37,16 +37,17 @@ const About = () => {
   {/* <!-- /social icon --> */}
   </div>
 </section>
-<section className="section py-5">
+<section className="about-section py-5">
   <div className="container">
     <div className="row">
-      <div className="col-md-8 ">
+      <div className="col-md-8">
         <div className='lead'>
-          <p>Data and business intelligence analyst. Interested in ml, web development and cloud 
-            computing commodo consequat.</p>
-          <p>Experienced trainer and developer, working with SQL, Microsoft Excel, Power BI, Python, JavaScript, ReactJS, 
+          <p>Data and business intelligence analyst. Interested in finance, ml, web development and cloud 
+            computing.</p>
+          <p>Experienced trainer and developer, multiple years experience working with SQL, Microsoft Excel, Power BI, Python, Flask, JavaScript, ReactJS, 
             SPSS, SigmaPlot, Grapher12, Streamlit, CSS, HTML, Bootstrap, Tailwind and other technologies 
             for data analysis, web development and machine learning.</p>
+          <p>Building Data Apps for individuals and organizations</p>
         </div>
         <div>
           <blockquote className='blockquote'>
@@ -57,7 +58,7 @@ const About = () => {
       </div>
       
       <div className="col-md-4 text-center drag-lg-top">
-        <div className="shadow-down mb-4">
+        <div className="shadow-down mb-4 ">
           <img src={author} alt="author" className="img-fluid w-100 rounded-lg border-thick border-white" />
         </div>
         <img src={signature} alt="signature" className="img-fluid" />
